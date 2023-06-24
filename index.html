@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Library System</title>
+</head>
+
+<body>
+    <nav>
+        <a href="#books">
+            <h1>Library System</h1>
+        </a>
+        <ul>
+            <a href="#books">
+                <li>Books</li>
+            </a>
+            <a href="#register">
+                <li>Register</li>
+            </a>
+            <a href="#">
+                <li>Contact Us</li>
+            </a>
+            <a href="#">
+                <li>Logout</li>
+            </a>
+            <li></li>
+        </ul>
+    </nav>
+    <section id="books">
+        <h2>Books</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Book ID</th>
+              <th>Title</th>
+              <th>Author</th>
+              <th>Genre</th>
+              <th>Availability</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>
+                <table class="nested-table">
+                  <tr>
+                    <td colspan="2"><strong><a href="#book1">Enchanted Ones</a></strong></td>
+                  </tr>
+                  <tr>
+                    <td>Publication Date:</td>
+                    <td>2020-01-01</td>
+                  </tr>
+                  <tr>
+                    <td>Page Count:</td>
+                    <td>300</td>
+                  </tr>
+                  <tr>
+                    <td>ISBN:</td>
+                    <td>978-1-234567-89-0</td>
+                  </tr>
+                </table>
+              </td>
+              <td>Lewis Carrol</td>
+              <td>Motivational</td>
+              <td>Available</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>
+                <table class="nested-table">
+                  <tr>
+                    <td colspan="2"><strong><a href="#book2">Winter Fairy</a></strong></td>
+                  </tr>
+                  <tr>
+                    <td>Publication Date:</td>
+                    <td>2021-03-15</td>
+                  </tr>
+                  <tr>
+                    <td>Page Count:</td>
+                    <td>250</td>
+                  </tr>
+                  <tr>
+                    <td>ISBN:</td>
+                    <td>978-2-345678-90-1</td>
+                  </tr>
+                </table>
+              </td>
+              <td>Jane Bond</td>
+              <td>Adventure</td>
+              <td>Available</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>
+                <table class="nested-table">
+                  <tr>
+                    <td colspan="2"><strong><a href="#book3">Ice Wizard</a></strong></td>
+                  </tr>
+                  <tr>
+                    <td>Publication Date:</td>
+                    <td>2019-09-20</td>
+                  </tr>
+                  <tr>
+                    <td>Page Count:</td>
+                    <td>400</td>
+                  </tr>
+                  <tr>
+                    <td>ISBN:</td>
+                    <td>978-3-456789-01-2</td>
+                  </tr>
+                </table>
+              </td>
+              <td>Vikram Roy</td>
+              <td>Sci-Fi</td>
+              <td>Not Available</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>
+                <table class="nested-table">
+                  <tr>
+                    <td colspan="2"><strong><a href="#book4">The Dark Dragon</a></strong></td>
+                  </tr>
+                  <tr>
+                    <td>Publication Date:</td>
+                    <td>2022-06-10</td>
+                  </tr>
+                  <tr>
+                    <td>Page Count:</td>
+                    <td>180</td>
+                  </tr>
+                  <tr>
+                    <td>ISBN:</td>
+                    <td>978-4-567890-12-3</td>
+                  </tr>
+                </table>
+              </td>
+              <td>Sutri Mukherjee</td>
+              <td>Horror</td>
+              <td>Available</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>
+                <table class="nested-table">
+                  <tr>
+                    <td colspan="2"><strong><a href="#book5">Never Again</a></strong></td>
+                  </tr>
+                  <tr>
+                    <td>Publication Date:</td>
+                    <td>2023-02-05</td>
+                  </tr>
+                  <tr>
+                    <td>Page Count:</td>
+                    <td>320</td>
+                  </tr>
+                  <tr>
+                    <td>ISBN:</td>
+                    <td>978-5-678901-23-4</td>
+                  </tr>
+                </table>
+              </td>
+              <td>Neil Golding</td>
+              <td>Motivational</td>
+              <td>Not Available</td>
+            </tr>
+          </tbody>
+        </table>
+    
+    </section>
+    </div>
+    <section id="register">
+        <div class="register">
+            <h1>Register</h1>
+            <form action="#books">
+                <label for="first-name">First Name:</label>
+                <input type="text" name="first-name" id="first-name" required>
+                <label for="last-name">Last Name:</label>
+                <input type="text" name="last-name" id="last-name" required>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" required>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" name="dob" id="dob" required>
+                <label for="age">Age:</label>
+                <input type="number" name="Age" id="age" required min="5" max="100">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" required>
+                <label for="cnf-pass">Confirm Password</label>
+                <input type="password" name="cnf-pass" id="cnf-pass" required>
+                <input type="submit" value="Register">
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
